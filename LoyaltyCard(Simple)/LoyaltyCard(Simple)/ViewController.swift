@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBAction func editTapped(_ sender: UIButton) {
         showAlert()
         checkForRedeemable()
+        editOutlet.isHidden = true
+        redeemStarsLblTxt.isHidden = false
     }
     
     @IBAction func selectAction(_ sender: UIButton) {
@@ -25,6 +27,8 @@ class ViewController: UIViewController {
         editOutlet.isHidden = false
         isAuthorized = false
         updateUI()
+        editOutlet.isHidden = false
+        redeemStarsLblTxt.isHidden = true
     }
     
     @IBAction func redeemTapped(_ sender: UIButton) {
@@ -36,6 +40,7 @@ class ViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var redeemStarsLblTxt: UILabel!
     @IBOutlet weak var doneOutlet: UIButton!
     @IBOutlet weak var editOutlet: UIButton!
     @IBOutlet weak var redeemOutlet: UIButton!
