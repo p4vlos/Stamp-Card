@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoyaltyCard_Simple_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyn-le-ZbA">
+                                <frame key="frameInset" minX="144" minY="354" width="86" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="a9d-TE-QiH"/>
+                                    <constraint firstAttribute="width" constant="86" id="upX-gY-i4J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="DONE"/>
+                                <connections>
+                                    <action selector="doneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8WO-TN-g0Y"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-aP-DDB">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Dhf-kg-MYM"/>
+                                    <constraint firstAttribute="width" constant="106" id="p0m-YN-uvO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Redeem!"/>
+                                <connections>
+                                    <action selector="redeemTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9an-wn-nL0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy 10 Get 1 FREE!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OD4-rn-vmJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="00u-fb-Css"/>
+                                    <constraint firstAttribute="height" constant="32" id="D04-zw-ags"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6P-Qs-4tX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OXh-lq-9d2"/>
+                                    <constraint firstAttribute="width" constant="222" id="xDH-bc-WPC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Redeem Stamp(s)"/>
+                                <connections>
+                                    <action selector="editTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qoc-8L-iZB"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dna-bZ-b5k">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uQM-Op-Ss5">
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fn-kc-Ibw">
+                                                <state key="normal" image="unselectedStar"/>
+                                                <state key="selected" image="selectedStar"/>
+                                                <connections>
+                                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Igj-dm-cyz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX9-NE-ZKV">
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="unselectedStar"/>
+                                                <state key="selected" image="selectedStar"/>
+                                                <connections>
+                                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HeI-ZX-biF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JL-P2-lno">
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="unselectedStar"/>
+                                                <state key="selected" image="selectedStar"/>
+                                                <connections>
+                                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VmU-KI-jaG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvN-pw-XKD">
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="unselectedStar"/>
+                                                <state key="selected" image="selectedStar"/>
+                                                <connections>
+                                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kRZ-ia-pkN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAT-GA-hEa">
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="unselectedStar"/>
+                                                <state key="selected" image="selectedStar"/>
+                                                <connections>
+                                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IKP-Qb-1hH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9iU-Ie-P8N">
+                                        <subviews>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9C9-tH-4Mk">
+                                                <state key="normal" image="unselectedStar"/>
+                                                <state key="selected" image="selectedStar"/>
+                                                <connections>
+                                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VcT-RJ-iDU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fR-eQ-SDS">
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="unselectedStar"/>
+                                                <state key="selected" image="selectedStar"/>
+                                                <connections>
+                                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qBc-cf-TrO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKU-Da-DOF">
+                                                <state key="normal" image="unselectedStar"/>
+                                                <state key="selected" image="selectedStar"/>
+                                                <connections>
+                                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnc-01-elE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0S-8Y-lrW">
+                                                <state key="normal" image="unselectedStar"/>
+                                                <state key="selected" image="selectedStar"/>
+                                                <connections>
+                                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVs-QO-DS9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVu-RL-aJu">
+                                                <state key="normal" image="unselectedStar"/>
+                                                <state key="selected" image="selectedStar"/>
+                                                <connections>
+                                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="srG-DK-Itj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t6P-Qs-4tX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="2lT-iu-7zr"/>
+                            <constraint firstItem="h1t-aP-DDB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="118" id="3Kz-fP-ghJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h1t-aP-DDB" secondAttribute="bottom" constant="20" id="6lq-kI-KSr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t6P-Qs-4tX" secondAttribute="trailing" constant="61" id="A6h-pC-Mjf"/>
+                            <constraint firstItem="OD4-rn-vmJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BCA-Qg-if8"/>
+                            <constraint firstItem="t6P-Qs-4tX" firstAttribute="top" secondItem="OD4-rn-vmJ" secondAttribute="bottom" constant="94" id="C9f-Ix-2de"/>
+                            <constraint firstItem="OD4-rn-vmJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fdj-aQ-eBy"/>
+                            <constraint firstItem="cyn-le-ZbA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="128" id="GO4-au-hAm"/>
+                            <constraint firstItem="cyn-le-ZbA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pb4-CT-zcY"/>
+                            <constraint firstItem="OD4-rn-vmJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YV3-7x-gsc"/>
+                            <constraint firstItem="Dna-bZ-b5k" firstAttribute="top" secondItem="t6P-Qs-4tX" secondAttribute="bottom" constant="17" id="lZF-Xm-Fr3"/>
+                            <constraint firstItem="t6P-Qs-4tX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mIM-fH-POQ"/>
+                            <constraint firstItem="OD4-rn-vmJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="sQt-BL-Ckg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cyn-le-ZbA" secondAttribute="trailing" constant="129" id="ukn-jD-CQk"/>
+                            <constraint firstItem="h1t-aP-DDB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCj-Ha-ek9"/>
+                            <constraint firstItem="Dna-bZ-b5k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y7y-6h-iCe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h1t-aP-DDB" secondAttribute="trailing" constant="119" id="ycI-60-zoL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doneOutlet" destination="cyn-le-ZbA" id="3WP-qS-OLd"/>
+                        <outlet property="editOutlet" destination="t6P-Qs-4tX" id="7bt-6N-Cpd"/>
+                        <outlet property="redeemOutlet" destination="h1t-aP-DDB" id="gTr-A5-F8r"/>
+                        <outletCollection property="latteButtonCollection" destination="PAT-GA-hEa" collectionClass="NSMutableArray" id="dDI-f0-lof"/>
+                        <outletCollection property="latteButtonCollection" destination="8JL-P2-lno" collectionClass="NSMutableArray" id="LKG-od-b1n"/>
+                        <outletCollection property="latteButtonCollection" destination="lvN-pw-XKD" collectionClass="NSMutableArray" id="Rbv-bD-dG7"/>
+                        <outletCollection property="latteButtonCollection" destination="0fn-kc-Ibw" collectionClass="NSMutableArray" id="R9E-YB-WNH"/>
+                        <outletCollection property="latteButtonCollection" destination="pX9-NE-ZKV" collectionClass="NSMutableArray" id="Mc2-Bh-iCY"/>
+                        <outletCollection property="latteButtonCollection" destination="ZKU-Da-DOF" collectionClass="NSMutableArray" id="FV9-Lb-tJD"/>
+                        <outletCollection property="latteButtonCollection" destination="fVu-RL-aJu" collectionClass="NSMutableArray" id="pVr-NS-a7t"/>
+                        <outletCollection property="latteButtonCollection" destination="2fR-eQ-SDS" collectionClass="NSMutableArray" id="u0z-3S-kgY"/>
+                        <outletCollection property="latteButtonCollection" destination="k0S-8Y-lrW" collectionClass="NSMutableArray" id="YJF-ZJ-MEF"/>
+                        <outletCollection property="latteButtonCollection" destination="9C9-tH-4Mk" collectionClass="NSMutableArray" id="Spu-DW-Hwa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="311.69415292353824"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="selectedStar" width="50" height="50"/>
+        <image name="unselectedStar" width="50" height="50"/>
+    </resources>
+</document>
