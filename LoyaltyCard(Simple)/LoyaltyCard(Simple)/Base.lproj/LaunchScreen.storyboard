@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,12 +18,65 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pre-stamped customers are twice as likely to finish the card &amp; redeem the offer!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rw-4A-6NB">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="2qY-VC-IWb"/>
+                                    <constraint firstAttribute="height" constant="41" id="cGk-tr-yEq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stamped Card" translatesAutoresizingMaskIntoConstraints="NO" id="zaF-9d-fws">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="PmC-7u-DMC"/>
+                                    <constraint firstAttribute="width" constant="240" id="pOg-eI-bQE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loyalty Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkD-Hi-mhq">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="11t-xG-84m"/>
+                                    <constraint firstAttribute="height" constant="46" id="k21-GI-G3T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unstamped Card" translatesAutoresizingMaskIntoConstraints="NO" id="wEm-N9-88t">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="7bl-JI-Wvu"/>
+                                    <constraint firstAttribute="width" constant="240" id="gUv-dG-jdB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jkD-Hi-mhq" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="56" id="492-HD-tMN"/>
+                            <constraint firstItem="wEm-N9-88t" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="5XC-gW-XtT"/>
+                            <constraint firstItem="wEm-N9-88t" firstAttribute="top" secondItem="jkD-Hi-mhq" secondAttribute="bottom" constant="57" id="69B-pt-q1Y"/>
+                            <constraint firstItem="2rw-4A-6NB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7Iw-Io-bcw"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="2rw-4A-6NB" secondAttribute="bottom" constant="20" id="AmX-BG-NMa"/>
+                            <constraint firstItem="jkD-Hi-mhq" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="48" id="K1j-jL-SxS"/>
+                            <constraint firstItem="zaF-9d-fws" firstAttribute="top" secondItem="wEm-N9-88t" secondAttribute="bottom" constant="24" id="Oec-5X-F1H"/>
+                            <constraint firstItem="zaF-9d-fws" firstAttribute="top" secondItem="wEm-N9-88t" secondAttribute="bottom" constant="24" id="hsB-XF-erT"/>
+                            <constraint firstItem="2rw-4A-6NB" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="huO-Rh-xC6"/>
+                            <constraint firstItem="zaF-9d-fws" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="mij-WZ-IBO"/>
+                            <constraint firstItem="jkD-Hi-mhq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sZY-Zs-t6U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jkD-Hi-mhq" secondAttribute="trailing" constant="57" id="tPF-xq-Dmw"/>
+                            <constraint firstItem="2rw-4A-6NB" firstAttribute="top" secondItem="zaF-9d-fws" secondAttribute="bottom" constant="33" id="uoY-X6-1UH"/>
+                            <constraint firstItem="2rw-4A-6NB" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="x5e-9p-C0M"/>
+                            <constraint firstItem="2rw-4A-6NB" firstAttribute="top" secondItem="zaF-9d-fws" secondAttribute="bottom" constant="33" id="zvY-aT-Mj8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Stamped Card" width="481" height="357"/>
+        <image name="Unstamped Card" width="445" height="355"/>
+    </resources>
 </document>

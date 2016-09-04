@@ -83,15 +83,15 @@ class ViewController: UIViewController {
     
     func showAlert() {
         
-        let alertController = UIAlertController(title: "Edit", message: "Enter code", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Password Required!", message: "Please allow the store employee to type the super secret password onto your phone please!", preferredStyle: .alert)
         
-        let verifyAction = UIAlertAction(title: "Edit", style: .default) {
+        let verifyAction = UIAlertAction(title: "Authorize", style: .default) {
             (verifyAction) -> Void in
             
             let textField = alertController.textFields?.first
             // test for verification
             if textField!.text == self.verificationCode {
-                print("approved")
+                print("Approved!")
                 self.latteStamps = 0
                 self.coffeeStamps = 0
                 self.loadDefaults()
