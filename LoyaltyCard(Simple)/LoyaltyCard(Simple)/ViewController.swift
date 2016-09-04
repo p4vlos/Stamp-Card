@@ -107,6 +107,9 @@ class ViewController: UIViewController {
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) {
             (alertAction) -> Void in
             
+            self.editOutlet.isHidden = false
+            self.redeemStarsLblTxt.isHidden = true
+            
         }
         alertController.addTextField { (textField) -> Void in
             
