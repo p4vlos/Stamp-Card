@@ -40,13 +40,14 @@ class ViewController: UIViewController {
     }
     
     
-    @IBOutlet weak var redeemStarsLblTxt: UILabel!
+    
+    @IBOutlet weak var redeemStarsLblTxt: UIImageView!
     @IBOutlet weak var doneOutlet: UIButton!
     @IBOutlet weak var editOutlet: UIButton!
     @IBOutlet weak var redeemOutlet: UIButton!
     @IBOutlet var latteButtonCollection: Array<UIButton>?
     
-    var verificationCode = "4444"
+    var verificationCode = "aaaa"
     var latteStamps = 0
     var coffeeStamps = 0
     var isAuthorized: Bool = false
@@ -124,6 +125,9 @@ class ViewController: UIViewController {
         
         if self.latteStamps == 10 {
             self.redeemOutlet.isHidden = false
+            loadDefaults()
+            checkForRedeemable()
+            updateUI()
         } else {
             self.redeemOutlet.isHidden = true
         }
