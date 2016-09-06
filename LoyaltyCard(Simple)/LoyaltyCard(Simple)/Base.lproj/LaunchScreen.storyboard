@@ -18,11 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch screen" translatesAutoresizingMaskIntoConstraints="NO" id="PC3-8y-K4w">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch screen" translatesAutoresizingMaskIntoConstraints="NO" id="PC3-8y-K4w">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="cwc-2f-UYR"/>
+                                    <constraint firstAttribute="width" constant="375" id="dLW-4g-2j3"/>
+                                </constraints>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="PC3-8y-K4w" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="AXI-us-l2P"/>
+                            <constraint firstItem="PC3-8y-K4w" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="MTc-by-ddW"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="PC3-8y-K4w" secondAttribute="bottom" id="NNl-UN-iCW"/>
+                            <constraint firstAttribute="trailing" secondItem="PC3-8y-K4w" secondAttribute="trailing" id="vST-F2-aWQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
