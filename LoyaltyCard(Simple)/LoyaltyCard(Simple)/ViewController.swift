@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  LoyaltyCard(Simple)
 //
-//  Created by Mitchell Phillips on 4/3/16.
-//  Copyright © 2016 Wasted Potential LLC. All rights reserved.
+//  Created by Jason McCoy on 09/6/16.
+//  Copyright © 2016 Jason McCoy. All rights reserved.
 //
 
 import UIKit

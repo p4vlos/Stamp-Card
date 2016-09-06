@@ -71,15 +71,15 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyn-le-ZbA">
-                                <frame key="frameInset" minX="58" minY="522" width="277" height="67"/>
+                                <frame key="frameInset" minX="51" minY="522" width="277" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="COLLECT!" image="collect banner"/>
+                                <state key="normal" image="im done banner"/>
                                 <connections>
                                     <action selector="doneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8WO-TN-g0Y"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-aP-DDB">
-                                <frame key="frameInset" minX="58" minY="522" width="277" height="67"/>
+                                <frame key="frameInset" minX="51" minY="522" width="277" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Redeem!" image="redeem banner"/>
                                 <connections>
@@ -87,7 +87,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6P-Qs-4tX">
-                                <frame key="frameInset" minX="51" minY="455" width="277" height="67"/>
+                                <frame key="frameInset" minX="51" minY="522" width="277" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Redeem Stamp(s)" image="redeem banner"/>
                                 <connections>
@@ -181,8 +181,8 @@
     </scenes>
     <resources>
         <image name="background 2" width="1080" height="1920"/>
-        <image name="collect banner" width="726" height="230"/>
         <image name="cup half full" width="228" height="260"/>
+        <image name="im done banner" width="726" height="230"/>
         <image name="redeem banner" width="726" height="230"/>
         <image name="selectedStar" width="228" height="260"/>
         <image name="tap on cup to redeem" width="929" height="220"/>

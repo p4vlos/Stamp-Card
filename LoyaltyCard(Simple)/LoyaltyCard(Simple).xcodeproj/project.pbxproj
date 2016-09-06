@@ -12,7 +12,6 @@
 		1BE92E041CB1C121009284A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E021CB1C121009284A0 /* Main.storyboard */; };
 		1BE92E061CB1C121009284A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E051CB1C121009284A0 /* Assets.xcassets */; };
 		1BE92E091CB1C121009284A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E071CB1C121009284A0 /* LaunchScreen.storyboard */; };
-		1BE92E111CB2CEC0009284A0 /* SignPainter-HouseScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E101CB2CEC0009284A0 /* SignPainter-HouseScript.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		1BE92E051CB1C121009284A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BE92E081CB1C121009284A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BE92E0A1CB1C121009284A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BE92E101CB2CEC0009284A0 /* SignPainter-HouseScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignPainter-HouseScript.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 				1BE92E051CB1C121009284A0 /* Assets.xcassets */,
 				1BE92E071CB1C121009284A0 /* LaunchScreen.storyboard */,
 				1BE92E0A1CB1C121009284A0 /* Info.plist */,
-				1BE92E101CB2CEC0009284A0 /* SignPainter-HouseScript.ttf */,
 			);
 			path = "LoyaltyCard(Simple)";
 			sourceTree = "<group>";
@@ -136,7 +133,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BE92E091CB1C121009284A0 /* LaunchScreen.storyboard in Resources */,
-				1BE92E111CB2CEC0009284A0 /* SignPainter-HouseScript.ttf in Resources */,
 				1BE92E061CB1C121009284A0 /* Assets.xcassets in Resources */,
 				1BE92E041CB1C121009284A0 /* Main.storyboard in Resources */,
 			);
