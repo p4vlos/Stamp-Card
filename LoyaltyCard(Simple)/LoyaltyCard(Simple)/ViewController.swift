@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         latteStamps = 0
         redeemOutlet.isHidden = true
         updateUI()
+        doneTapped(doneOutlet) 
         }
     }
     

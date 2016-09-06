@@ -187,11 +187,10 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="tap on cup to redeem" translatesAutoresizingMaskIntoConstraints="NO" id="jTG-AZ-RvE">
-                                <frame key="frameInset" minX="15" minY="71" width="320" height="81"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap on cup to redeem" translatesAutoresizingMaskIntoConstraints="NO" id="jTG-AZ-RvE">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="81" id="4Yq-lU-7eR"/>
-                                    <constraint firstAttribute="width" constant="320" id="Xhs-QS-E6h"/>
+                                    <constraint firstAttribute="width" constant="320" id="W68-VM-dSS"/>
+                                    <constraint firstAttribute="height" constant="81" id="tsV-lS-Zho"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -203,11 +202,14 @@
                             <constraint firstItem="t6P-Qs-4tX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="BXW-lw-WRP"/>
                             <constraint firstItem="5NB-g9-rGd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Cop-QD-xe7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h1t-aP-DDB" secondAttribute="bottom" constant="78" id="ESK-IQ-zlJ"/>
+                            <constraint firstItem="jTG-AZ-RvE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="Ga5-Og-Uh6"/>
                             <constraint firstItem="xub-mn-Rep" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KTf-BM-YR9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h1t-aP-DDB" secondAttribute="trailing" constant="31" id="OkQ-sA-xg1"/>
+                            <constraint firstItem="jTG-AZ-RvE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="Rd7-qb-C4q"/>
                             <constraint firstItem="h1t-aP-DDB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VI7-eJ-P6d"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cyn-le-ZbA" secondAttribute="bottom" constant="78" id="Va6-y6-0A9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cyn-le-ZbA" secondAttribute="trailing" constant="31" id="WwA-Pz-vLU"/>
+                            <constraint firstAttribute="trailing" secondItem="jTG-AZ-RvE" secondAttribute="trailing" constant="40" id="X2u-Pn-1Hq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="t6P-Qs-4tX" secondAttribute="trailing" constant="31" id="Y8l-qS-gn0"/>
                             <constraint firstAttribute="trailing" secondItem="xub-mn-Rep" secondAttribute="trailing" id="ZAP-au-uBc"/>
                             <constraint firstItem="t6P-Qs-4tX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cSw-ul-SJv"/>
