@@ -125,9 +125,6 @@ class ViewController: UIViewController {
         
         if self.latteStamps == 10 {
             self.redeemOutlet.isHidden = false
-            loadDefaults()
-            checkForRedeemable()
-            updateUI()
         } else {
             self.redeemOutlet.isHidden = true
         }
