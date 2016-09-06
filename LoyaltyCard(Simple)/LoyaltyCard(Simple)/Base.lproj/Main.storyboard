@@ -19,7 +19,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background 2" translatesAutoresizingMaskIntoConstraints="NO" id="xub-mn-Rep"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="xub-mn-Rep"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background border" translatesAutoresizingMaskIntoConstraints="NO" id="twg-fj-HRh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="377" id="Es1-Lu-3Mv"/>
+                                    <constraint firstAttribute="height" constant="234" id="S4i-Rc-SvM"/>
+                                </constraints>
+                            </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyn-le-ZbA">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="eqh-9S-IKI"/>
@@ -195,6 +201,7 @@
                             </imageView>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="twg-fj-HRh" secondAttribute="trailing" id="444-bX-ubt"/>
                             <constraint firstItem="xub-mn-Rep" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4Fj-31-Dua"/>
                             <constraint firstItem="cyn-le-ZbA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="4mX-t2-S3I"/>
                             <constraint firstItem="5NB-g9-rGd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="53w-Vm-yTG"/>
@@ -204,6 +211,8 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h1t-aP-DDB" secondAttribute="bottom" constant="78" id="ESK-IQ-zlJ"/>
                             <constraint firstItem="jTG-AZ-RvE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="Ga5-Og-Uh6"/>
                             <constraint firstItem="xub-mn-Rep" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KTf-BM-YR9"/>
+                            <constraint firstItem="twg-fj-HRh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="M5P-IN-Jc2"/>
+                            <constraint firstItem="t6P-Qs-4tX" firstAttribute="top" secondItem="twg-fj-HRh" secondAttribute="bottom" constant="192" id="Obi-IC-oZr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h1t-aP-DDB" secondAttribute="trailing" constant="31" id="OkQ-sA-xg1"/>
                             <constraint firstItem="jTG-AZ-RvE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="Rd7-qb-C4q"/>
                             <constraint firstItem="h1t-aP-DDB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VI7-eJ-P6d"/>
@@ -213,6 +222,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="t6P-Qs-4tX" secondAttribute="trailing" constant="31" id="Y8l-qS-gn0"/>
                             <constraint firstAttribute="trailing" secondItem="xub-mn-Rep" secondAttribute="trailing" id="ZAP-au-uBc"/>
                             <constraint firstItem="t6P-Qs-4tX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cSw-ul-SJv"/>
+                            <constraint firstItem="twg-fj-HRh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="76" id="eXD-BK-lIx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t6P-Qs-4tX" secondAttribute="bottom" constant="78" id="fuW-d8-2oL"/>
                             <constraint firstItem="cyn-le-ZbA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gLF-42-Diu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xub-mn-Rep" secondAttribute="bottom" id="ird-fs-FqH"/>
@@ -243,7 +253,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background 2" width="1080" height="1920"/>
+        <image name="background" width="1080" height="1920"/>
+        <image name="background border" width="1068" height="685"/>
         <image name="cup half full" width="228" height="260"/>
         <image name="im done banner" width="726" height="230"/>
         <image name="redeem banner" width="726" height="230"/>
